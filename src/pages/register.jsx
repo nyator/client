@@ -6,7 +6,7 @@ const Register = () => {
 
   async function register(ev){
     ev.preventDefault()
-    fetch('http://localhost:3000',{
+    fetch('http://localhost:3000/register',{
       method: 'POST',
       body: JSON.stringify({username,password}),
       headers:{'Content-Type' : 'application/json'},
